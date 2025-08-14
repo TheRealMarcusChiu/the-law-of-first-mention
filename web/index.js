@@ -31,7 +31,7 @@ function findWord(){
   if(!raw){ resultBox.textContent = 'Please enter a word.'; return; }
   const key = raw.toLowerCase();
   const where = firstOccurrences[key];
-  resultBox.textContent = where ? `"${key}" first appears in ${where}` : `"${key}" was not found :(`;
+  resultBox.textContent = where ? `<em>"${key}"</em> first appears in ${where}` : `<em>"${key}"</em> was not found :(`;
 }
 
 document.getElementById('findBtn').addEventListener('click', findWord);
