@@ -1,15 +1,6 @@
 import json
 import re
 
-# def clean_sentence(sentence):
-#     # Remove newlines and carriage returns
-#     sentence = sentence.replace("\n", " ").replace("\r", " ")
-#     # Remove specific Unicode characters (smart quotes, etc.)
-#     sentence = sentence.replace("\u201c", "").replace("\u201d", "")
-#     # Optionally remove em-dash and en-dash
-#     sentence = sentence.replace("\u2014", " ").replace("\u2013", " ")
-#     return sentence.strip()
-
 def process_json(input_file, output_file):
     word_first_occurrence = {}  # word -> "BOOK CHAPTER:VERSE"
 
